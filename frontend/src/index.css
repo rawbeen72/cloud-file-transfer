@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+
+  height: 100%;
+}
+
+.dragged {
+  background-color: rgb(241, 241, 241);
+  transition: ease-in-out 0.3s;
+}
+.img-container img {
+  position: absolute;
+ 
+}
+.dragged .top-img{
+  position: absolute;
+  margin-bottom: 120px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  opacity: 0.5;
+/* margin-top: -40px; */
+
+}
