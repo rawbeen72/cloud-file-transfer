@@ -5,13 +5,12 @@ const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 const files = require("./routes/files");
 const fileDownload = require("./routes/fileDownload");
-const { sendEmail } = require("./routes/sendEmail");
 app.use(express.json());
 app.use(cors());
 connectToDB();
 app.use("/api/files", files);
 app.use("/file/download", fileDownload);
-// sendEmail()
+
 app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
